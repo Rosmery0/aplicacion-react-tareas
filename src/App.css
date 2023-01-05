@@ -1,38 +1,63 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: white;
+  background-color: #A9639F;
+  font-family: Lato, sans-serif;
+  margin-top: 40px;
+}
+
+/* Tituto principal */
+
+h1 {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
   text-align: center;
+  width: 400px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Titulo del cuadro de tareas */
+
+h2 {
+  color: #a9639f;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Contenedor principal */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-tareas {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del titulo principal */
+
+.contenedor-titulo {
+  width: 100%;
+  margin: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Lista de Tareas */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tareas-lista-principal {
+  width: 600px;
+  min-height: 500px;
+  background-color: #d0d0d5;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 26px;
 }
